@@ -1,25 +1,125 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoMix" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kc2-ga-AEp" userLabel="CanvasView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.51358163160000003" blue="0.44604075209999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view alpha="0.39999999999999997" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFq-Xv-kLp" userLabel="ButtonsView">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-rb-8kZ" userLabel="ButtonNew">
+                                        <rect key="frame" x="32" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bZD-rb-8kZ" secondAttribute="height" id="cfe-XR-FSO"/>
+                                        </constraints>
+                                        <state key="normal" image="new-canvas">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="newCanvasButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YK-4o-b7S"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ej-sm-LLA" userLabel="ButtonPhoto">
+                                        <rect key="frame" x="125" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1Ej-sm-LLA" secondAttribute="height" multiplier="1:1" id="uPh-89-0ir"/>
+                                        </constraints>
+                                        <state key="normal" image="photo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="photoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVF-3R-cZ1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHF-gJ-MjQ" userLabel="ButtonSave">
+                                        <rect key="frame" x="219" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oHF-gJ-MjQ" secondAttribute="height" multiplier="1:1" id="ert-WG-ixC"/>
+                                        </constraints>
+                                        <state key="normal" image="save">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JO9-Ir-gqH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iif-iK-tyj" userLabel="ButtonDelete">
+                                        <rect key="frame" x="313" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="iif-iK-tyj" secondAttribute="height" id="t8o-GF-Tkw"/>
+                                        </constraints>
+                                        <state key="normal" image="delete">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GJY-tg-Uih"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.22360585945432124" green="0.4619041996992066" blue="0.55890376984126977" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bZD-rb-8kZ" firstAttribute="centerX" secondItem="tFq-Xv-kLp" secondAttribute="centerX" multiplier="0.25" id="EHs-9P-Dkp"/>
+                                    <constraint firstItem="1Ej-sm-LLA" firstAttribute="centerX" secondItem="tFq-Xv-kLp" secondAttribute="centerX" multiplier="0.75" id="ERj-WH-8pP"/>
+                                    <constraint firstItem="bZD-rb-8kZ" firstAttribute="height" secondItem="tFq-Xv-kLp" secondAttribute="height" multiplier="0.6" id="ExV-tm-kVJ"/>
+                                    <constraint firstItem="iif-iK-tyj" firstAttribute="centerX" secondItem="tFq-Xv-kLp" secondAttribute="centerX" multiplier="1.75" id="NYq-ns-jhg"/>
+                                    <constraint firstItem="oHF-gJ-MjQ" firstAttribute="height" secondItem="tFq-Xv-kLp" secondAttribute="height" multiplier="0.6" id="TsU-ZW-LKk"/>
+                                    <constraint firstAttribute="centerY" secondItem="iif-iK-tyj" secondAttribute="centerY" id="dtN-X0-YYw"/>
+                                    <constraint firstAttribute="centerY" secondItem="1Ej-sm-LLA" secondAttribute="centerY" id="fVU-FI-1Yx"/>
+                                    <constraint firstAttribute="centerY" secondItem="oHF-gJ-MjQ" secondAttribute="centerY" id="jRU-e5-Rg3"/>
+                                    <constraint firstAttribute="height" constant="50" id="oz9-Lq-Gde"/>
+                                    <constraint firstItem="iif-iK-tyj" firstAttribute="height" secondItem="tFq-Xv-kLp" secondAttribute="height" multiplier="0.6" id="qvs-jG-ILq"/>
+                                    <constraint firstItem="oHF-gJ-MjQ" firstAttribute="centerX" secondItem="tFq-Xv-kLp" secondAttribute="centerX" multiplier="1.25" id="uqe-DO-69n"/>
+                                    <constraint firstItem="1Ej-sm-LLA" firstAttribute="height" secondItem="tFq-Xv-kLp" secondAttribute="height" multiplier="0.6" id="vwa-xe-NhU"/>
+                                    <constraint firstAttribute="centerY" secondItem="bZD-rb-8kZ" secondAttribute="centerY" id="xB3-1I-DqS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tFq-Xv-kLp" secondAttribute="bottom" id="3Ue-FT-mfG"/>
+                            <constraint firstItem="tFq-Xv-kLp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="88K-ga-sFY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kc2-ga-AEp" secondAttribute="bottom" id="9LK-f1-b1T"/>
+                            <constraint firstItem="kc2-ga-AEp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="As3-pn-c6F"/>
+                            <constraint firstItem="kc2-ga-AEp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="hp2-10-x5o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kc2-ga-AEp" secondAttribute="trailing" constant="-16" id="vw6-Xo-X5h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tFq-Xv-kLp" secondAttribute="trailing" constant="-16" id="z1g-JT-K9N"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="canvasButton" destination="bZD-rb-8kZ" id="aTc-NB-xwH"/>
+                        <outlet property="canvasView" destination="kc2-ga-AEp" id="4JI-Zg-tiB"/>
+                        <outlet property="deleteButton" destination="iif-iK-tyj" id="BFU-to-drz"/>
+                        <outlet property="photoButton" destination="1Ej-sm-LLA" id="w76-jh-X8y"/>
+                        <outlet property="saveButton" destination="oHF-gJ-MjQ" id="tVD-ly-Jzb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="delete" width="104" height="104"/>
+        <image name="new-canvas" width="104" height="104"/>
+        <image name="photo" width="104" height="104"/>
+        <image name="save" width="104" height="104"/>
+    </resources>
 </document>

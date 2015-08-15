@@ -13,6 +13,8 @@
 		A22A8B891B01CBFC002E9F45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22A8B881B01CBFC002E9F45 /* Images.xcassets */; };
 		A22A8B8C1B01CBFC002E9F45 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A22A8B8A1B01CBFC002E9F45 /* LaunchScreen.xib */; };
 		A22A8B981B01CBFC002E9F45 /* PhotoMixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A8B971B01CBFC002E9F45 /* PhotoMixTests.swift */; };
+		A248301B1B7E191A00C6F5AA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A248301A1B7E191A00C6F5AA /* DataManager.swift */; };
+		A2B3F4541B79FC8300BD3366 /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B3F4531B79FC8300BD3366 /* TouchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		A22A8B911B01CBFC002E9F45 /* PhotoMixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoMixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22A8B961B01CBFC002E9F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A22A8B971B01CBFC002E9F45 /* PhotoMixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMixTests.swift; sourceTree = "<group>"; };
+		A248301A1B7E191A00C6F5AA /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A2B3F4531B79FC8300BD3366 /* TouchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				A22A8B881B01CBFC002E9F45 /* Images.xcassets */,
 				A22A8B8A1B01CBFC002E9F45 /* LaunchScreen.xib */,
 				A22A8B7F1B01CBFB002E9F45 /* Supporting Files */,
+				A2B3F4531B79FC8300BD3366 /* TouchView.swift */,
+				A248301A1B7E191A00C6F5AA /* DataManager.swift */,
 			);
 			path = PhotoMix;
 			sourceTree = "<group>";
@@ -212,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2B3F4541B79FC8300BD3366 /* TouchView.swift in Sources */,
+				A248301B1B7E191A00C6F5AA /* DataManager.swift in Sources */,
 				A22A8B841B01CBFC002E9F45 /* ViewController.swift in Sources */,
 				A22A8B821B01CBFB002E9F45 /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +419,7 @@
 				A22A8B9D1B01CBFC002E9F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A22A8B9E1B01CBFC002E9F45 /* Build configuration list for PBXNativeTarget "PhotoMixTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				A22A8BA01B01CBFC002E9F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
