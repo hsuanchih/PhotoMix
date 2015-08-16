@@ -58,7 +58,6 @@ class DataManager: NSObject {
             var index = 0
             var view: AnyObject? = unarchiver.decodeObjectForKey(String(index))
             while view != nil {
-                print(view)
                 let touchView = view as! TouchView
                 touchView.restoreProperties()
                 viewArray.addObject(touchView)
