@@ -7,15 +7,14 @@ The canvas can be saved to the photo album (and shared to social media).
 
 ## Screenshots
 
-  ![Screenshot-Launch](./Screenshots/screenshot-launch.png)  
-
-  ![Screenshot-Photo](./Screenshots/screenshot-photo.png)
-
+  ![Screenshot-Launch](./Screenshots/screenshot-launch.png)
   ![Screenshot-Main](./Screenshots/screenshot-main.png)
-
+  ![Screenshot-Photo](./Screenshots/screenshot-photo.png)
   ![Screenshot-Delete](./Screenshots/screenshot-delete.png)
-
   ![Screenshot-Save](./Screenshots/screenshot-save.png)
+
+## Contributors
+#####Icon images sponsored by [Icons8](https://icons8.com/)
 
 ## Authors
 #####Hsuan-Chih Chuang
