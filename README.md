@@ -18,8 +18,9 @@ The canvas can be saved to the photo album (and shared to social media).
 #### Save Canvas
   ![Screenshot-Save](./Screenshots/screenshot-save.png)
 
-## Contributors
-#####Icon images sponsored by [Icons8](https://icons8.com/)
+## Credits
+* References to Jason Beaver's [TouchImageView](https://github.com/TUIC/TUIC/blob/master/TUIC-2D-iOS/TUIC-2D-iOS/TouchImageView.m) implementation for transform caching
+* Icon images sponsored by [Icons8](https://icons8.com/)
 
 ## Authors
 #####Hsuan-Chih Chuang
