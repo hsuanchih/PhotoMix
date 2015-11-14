@@ -7,16 +7,12 @@ The canvas can be saved to the photo album (and shared to social media).
 
 ## Screenshots
 
-####Launch / Photo Picker
-  ![Screenshot-Launch](./Screenshots/screenshot-launch.png)
+#### Photo Picker
   ![Screenshot-Photo](./Screenshots/screenshot-photo.png)
   
 #### Main / Delete Photo
   ![Screenshot-Main](./Screenshots/screenshot-main.png)
   ![Screenshot-Delete](./Screenshots/screenshot-delete.png)
-  
-#### Save Canvas
-  ![Screenshot-Save](./Screenshots/screenshot-save.png)
 
 ## Credits
 * References to Jason Beaver's [TouchImageView](https://github.com/TUIC/TUIC/blob/master/TUIC-2D-iOS/TUIC-2D-iOS/TouchImageView.m) implementation for transform caching
