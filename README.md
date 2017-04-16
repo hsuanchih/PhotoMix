@@ -19,4 +19,4 @@ The canvas can be saved to the photo album (and shared to social media).
 * Icon images sponsored by [Icons8](https://icons8.com/)
 
 ## Authors
-#####Hsuan-Chih Chuang
+##### Hsuan-Chih Chuang
